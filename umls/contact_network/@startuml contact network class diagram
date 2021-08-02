@@ -1,0 +1,25 @@
+@startuml contact network class diagram practice
+
+連絡する人 "0..2"-right-"1" 連絡される人
+
+連絡する人 "0..*"-- "0..*" 連絡内容
+
+連絡される人 "1..*"--"1..*" 連絡内容
+
+@enduml
+
+
+@startuml contact network class diagram 2
+
+package 連絡網 {
+    class 人 {
+        名前
+        連絡手段
+    }
+}
+
+人 "0..1 連絡元" - "0..2 連絡先" 人
+
+人 "1".."1..*" 連絡内容
+
+@enduml

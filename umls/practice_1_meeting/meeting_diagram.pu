@@ -1,2 +1,3 @@
 @startuml meeting diagram
+    class A
 @enduml
